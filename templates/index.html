@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sentiment analysis</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/Indexstyle.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="title">
+      <div class="title-text">
+        <h1 class="big-text">Sentiment Analysis</h1>
+      </div>
+    </header>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Enter the text : </h5>
+                  <form action="/predict" method="post">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="text"
+                        placeholder="Example sentence"
+                        autocomplete="off"
+                      />
+                    </div>
+                    <button
+                      name="submit"
+                      type="submit"
+                      class="btn btn-primary"
+                      data-submit="...Sending"
+                    >
+                      Predict!
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </body>
+</html>
